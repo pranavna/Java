@@ -45,19 +45,16 @@ public class Customer
 	public void searchCar()
 	{
 		// Take user input and display Cars available based on preferences
-    System.out.println("In searchCar");
 	}
 
 	public void reserveCar()
 	{
 		// Take user input for car, location and payment preferences
-    System.out.println("In reserveCar");
 	}
 
 	public void makePayment()
 	{
 		// Take user input to record payment
-    System.out.println("In makePayment");
 	}
 
 }
