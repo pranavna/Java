@@ -2,39 +2,39 @@ public class Application
 {
 	public static void main()
 	{
-		// Create customer object and call methods to simulate the menu flow
+		// Create customer object and call methods to simulate the menu flow    
 	}
-	
+
 }
 
 public class Customer
 {
-	
+
 	Customer()
 	{
 		// Constructor
 	}
-	
+
 	public getInput()
 	{
 		// Display menu options, take user input and call other methods based on input
 	}
-	
+
 	public SearchCar()
 	{
 		// Take user input and display Cars available based on preferences
 	}
-	
+
 	public ReserveCar()
 	{
 		// Take user input for car, location and payment preferences
 	}
-	
+
 	public MakePayment()
 	{
 		// Take user input to record payment
 	}
-	
+
 }
 
 
@@ -102,14 +102,14 @@ public class TheftInsurance implements InsuranceStrategy
 // Factory
 
 public class CarFactory{
-	public abstract Car getCar();	
+	public abstract Car getCar();
 }
 
 public class HatchBackCarCreator{
 	public Car getCar(){
 		return new HatchBackCar();
 	}
-	
+
 }
 
 
@@ -117,7 +117,7 @@ public class SedanCarCreator{
 	public Car getCar(){
 		return new SedanCar();
 	}
-	
+
 }
 
 
@@ -125,14 +125,14 @@ public class SUVCarCreator{
 	public Car getCar(){
 		return new SUVCar();
 	}
-	
+
 }
 
 public class CovertibleCarCreator{
 	public Car getCar(){
 		return new CovertibleCar();
 	}
-	
+
 }
 
 //Cars
@@ -141,8 +141,8 @@ public abstract class Car{
 	abstract float getRentalPrice()
 	abstract boolean getAvailability()
 	abstract void updateAvailability()
-	
-	
+
+
 	// Observer Code
 	public int getState() {
       return state;
@@ -154,16 +154,16 @@ public abstract class Car{
    }
 
    public void attach(Observer observer){
-      observers.add(observer);		
+      observers.add(observer);
    }
 
    public void notifyAllObservers(){
       for (Observer observer : observers) {
          observer.update();
       }
-   } 	
-	
-	
+   }
+
+
 }
 
 
@@ -174,7 +174,7 @@ public class HatchBackCar extends Car{
 	public boolean getAvailability(){
 		// insert logic
 	}
-		
+
 	public void updateAvailability(){
 		// insert logic
 	}
@@ -188,7 +188,7 @@ public class SedanCar extends Car{
 	public boolean getAvailability(){
 		// insert logic
 	}
-		
+
 	public void updateAvailability(){
 		// insert logic
 	}
@@ -202,7 +202,7 @@ public class SUVCar extends Car{
 	public boolean getAvailability(){
 		// insert logic
 	}
-		
+
 	public void updateAvailability(){
 		// insert logic
 	}
@@ -216,7 +216,7 @@ public class ConvertibleCar extends Car{
 	public boolean getAvailability(){
 		// insert logic
 	}
-		
+
 	public void updateAvailability(){
 		// insert logic
 	}
@@ -240,7 +240,7 @@ public class CustomerNotify extends Observer{
    public void update() {
       // Update logic
    }
-   
+
     public void notifyCustomer() {
 	  //Notify logic
    }
@@ -256,7 +256,7 @@ public class StaffNotify extends Observer{
    public void update() {
       // Update logic
    }
-   
+
    public void notifyStaff() {
 	   //Notify logic
    }
