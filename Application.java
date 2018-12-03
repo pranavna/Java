@@ -9,12 +9,14 @@ public class Application
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("\n\n************************************************************************************");
+    System.out.println("\n\n************************************************************************************\n\n");
     System.out.println("\nDear valued customer, \n\nWelcome to CRAM (Car Rental Application Management) System.");
-    System.out.println("\n************************************************************************************");
     System.out.println("\nPlease enter your name:");
 
+
     String userName = input.nextLine();
+		System.out.println("\n\n************************************************************************************\n\n");
+
     Customer customer = new Customer(userName);
     //System.out.println(customer.name);
 
